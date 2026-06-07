@@ -1,0 +1,43 @@
+<html>
+ <head>
+ <script type="text/javascript">
+
+ var Komputer_Sirocki = {
+     marka: 'Dell',
+     ram: '16 GB',
+     dyski_ssd: '2',
+     Komputer_wyswietl_Sirocki: function ()
+     {
+         document.write(this.marka + ' ' + this.ram);
+     }
+ }
+
+
+ Komputer_Sirocki.system = 'Windows 11';
+
+ 
+ Komputer_Sirocki.Komputer_pokaz_Sirocki = function ()
+ {
+     alert('System operacyjny: ' + this.system);
+ }
+
+ 
+ Komputer_Sirocki.Komputer_pokaz_Sirocki();   
+ Komputer_Sirocki.Komputer_wyswietl_Sirocki(); 
+
+ </script>
+ </head>
+
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to Komputer<br>
+ Pola:<br>
+ marka<br>
+ ram<br>
+ dyski_ssd<br>
+ nowe pole: system<br>
+ metoda: Komputer_wyswietl_Sirocki<br>
+ nowa metoda: Komputer_pokaz_Sirocki<br>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kosma Sirocki - Zadanie 6</title>
+  <script type="text/javascript">
+    function okno_zamknij_siro() { window.close(); }
+  </script>
+</head>
+<body style="font-family:Arial; font-size:18px; line-height:1.6;">
+
+<h2 style="color:blue;">Zadanie 6 – Teoria</h2>
+
+<p><b>1) Rodzaje okienek</b><br>
+<u><b>Okienko alert</b></u> – wyświetla komunikat z informacją i przyciskiem OK.<br>
+<u><b>Okienko prompt</b></u> – pozwala użytkownikowi wpisać wartość, którą program może później wykorzystać.<br>
+<u><b>Okienko confirm</b></u> – umożliwia potwierdzenie lub odrzucenie akcji przez użytkownika (OK lub Cancel).</p>
+
+<p><b>2) Konwersji liczb</b><br>
+Podczas wczytywania danych przez <b>prompt</b> wartości są zapisywane jako ciąg znaków (string). Aby można było wykonać obliczenia, należy wykonać <u><b>konwersję</b></u> do typu liczbowego:<br>
+<b>parseFloat(zmienna)</b> – konwersja na typ zmiennoprzecinkowy.<br>
+<b>parseInt(zmienna)</b> – konwersja na liczbę całkowitą.<br>
+<b>toString(zmienna)</b> – konwersja do typu tekstowego (łańcuch znaków).</p>
+
+<p><b>3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</b><br>
+1️⃣ Nazwa musi zaczynać się od litery, „$” lub „_” i może zawierać tylko litery, cyfry, „$” i „_”.<br>
+2️⃣ Wielkość liter ma znaczenie — <u>Rekord</u> i <u>rekord</u> to różne zmienne.<br>
+3️⃣ Nie wolno używać <u>słów kluczowych JavaScript</u> jako nazw zmiennych.</p>
+
+<p><b>4) Typy zmiennych w JavaScript</b><br>
+JavaScript nie wymaga deklarowania typu – typ jest ustalany automatycznie po przypisaniu wartości.<br>
+Podstawowe typy zmiennych:<br>
+• <b>Number</b> – liczby całkowite i zmiennoprzecinkowe,<br>
+• <b>String</b> – tekst,<br>
+• <b>Boolean</b> – wartość logiczna (true/false),<br>
+• <b>Null</b> – brak wartości,<br>
+• <b>Undefined</b> – niezdefiniowana zmienna,<br>
+• <b>Object</b> – obiekt (np. tablica, funkcja itp.).</p>
+ <input type="button" value="Zamknij okno" onclick="okno_zamknij_siro()">
+</body>
+</html>

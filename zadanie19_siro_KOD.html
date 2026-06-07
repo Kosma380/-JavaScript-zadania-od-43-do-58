@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kosma Sirocki - Zadanie 19 KOD</title>
+  <script type="text/javascript">
+    function okno_zamknij_siro() { window.close(); }
+  </script>
+<meta charset="utf-8">
+</head>
+<body>
+<h2>Kosma Sirocki 3F – Kod do Zadania 19</h2>
+<textarea cols="80" rows="35">
+<!DOCTYPE html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  pole_Sirocki() 
+   { 
+var a_sir= parseFloat(document.getElementById('dlugosc').value); 
+ var b_sir= a*a; 
+        document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b.toFixed(2)+" cm^2";  
+   } 
+  obwod_Sirocki() 
+   { 
+ var a_sir= parseFloat(document.getElementById('dlugosc').value); 
+ var b_sir= 4*a; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b.toFixed(2)+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+  
+  <input type="button" value="Zamknij okno" onclick="okno_zamknij_siro()">
+</body> 
+</html>
+</textarea>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_siro()">

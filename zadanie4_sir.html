@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Teoria JavaScript - Sirocki</title>
+   <script type="text/javascript">
+    function okno_zamknij_siro() { window.close(); }
+  </script>
+</head>
+<body>
+  <h2>Teoria JavaScript - Sirocki</h2>
+
+  <b>1) Kiedy powstał JavaScript (podaj datę).</b><br>
+  JavaScript powstał w 1995 roku (Brendan Eich opracował język w połowie 1995; w 1995 roku przedstawiono go w Netscape — powszechnie podaje się rok 1995).<br><br>
+
+  <b>2) Dlaczego jest to język skryptowy?</b><br>
+  Ponieważ kod JavaScript jest zwykle interpretowany (wykonywany bezpośrednio przez środowisko — np. przeglądarkę) zamiast być uprzednio kompilowany do kodu maszynowego. Skrypty uruchamia się "na żywo".<br><br>
+
+  <b>3) Gdzie jest wykonywany JS (klient lub serwer)?</b><br>
+  Najczęściej po stronie klienta (w przeglądarce użytkownika), ale też może być wykonywany po stronie serwera (np. Node.js).<br><br>
+
+  <b>4) Dlaczego JS to bezpieczne narzędzie?</b><br>
+  JavaScript w przeglądarce działa w tzw. "sandboxie" — środowisku z ograniczonym dostępem do zasobów systemowych, co zmniejsza ryzyko bezpośredniego uszkodzenia systemu użytkownika. (Bezpieczeństwo zależy jednak od kodu i polityk przeglądarki.)<br><br>
+
+  <b>5) Czy jest to język obiektowy, jeśli tak to dlaczego.</b><br>
+  Tak. JavaScript obsługuje obiekty, prototypy i (od ECMAScript 2015) klasy — umożliwia tworzenie i operowanie na obiektach, enkapsulację danych i metod.<br><br>
+
+  <b>6) Wymień zalety JS:</b><br>
+  Zaleta1 – Łatwość nauki i szybkie efekty.<br>
+  Zaleta2 – Działa we wszystkich nowoczesnych przeglądarkach.<br>
+  Zaleta3 – Duża społeczność, biblioteki i frameworki (np. React, Vue, Angular).<br><br>
+
+  <b>7) Framework to:</b><br>
+  Gotowy zestaw narzędzi i struktur (biblioteka + konwencje), który ułatwia budowanie aplikacji według określonego wzorca.<br><br>
+
+  <b>8) Do aplikacji mobilnych można użyć Framework</b><br>
+  Tak — przykłady: React Native, Ionic, NativeScript — pozwalają tworzyć aplikacje mobilne wykorzystując JavaScript/HTML/CSS.<br><br>
+
+  <b>9) Aplikacje responsywne to:</b><br>
+  Aplikacje/strony, które dostosowują układ i wygląd do różnych rozmiarów ekranów (telefony, tablety, PC) — używa się CSS (media queries) i elastycznych układów.<br><br>
+
+  <b>10) Przepisz linię kodu i wyjaśnij:</b><br>
+  &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br>
+  Wyjaśnienie: Tworzy przycisk formularza o nazwie "przycisk" i etykiecie "Nowa Strona". Po kliknięciu zostanie wywołana funkcja `WinOpen()` (która zwykle otwiera nowe okno). Użyte encje `&lsaquo;` i `&rsaquo;` pozwalają wyświetlić znaki mniejsze/większe bez interpretacji jako HTML.<br><br>
+
+  <b>11) Przepisz linię i wytłumacz:</b><br>
+  window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+  Wyjaśnienie: Otwiera nowe okno lub kartę z zawartością `obraz.html`, nadaje temu oknu nazwę `okienko` i ustawia parametry: `toolbar=no` (ukrywa pasek narzędzi), `directories=no` (ukrywa przyciski katalogów), `menubar=no` (ukrywa pasek menu), `height=280` (wysokość okna), `width=160` (szerokość okna), `top=200` (odległość od górnej krawędzi ekranu), `left=200` (odległość od lewej krawędzi).<br><br>
+
+  <b>Opis opcji (krótko):</b><br>
+  - toolbar=no → ukrywa pasek narzędzi przeglądarki w nowym oknie (jeśli przeglądarka pozwala).<br>
+  - directories=no → historycznie ukrywa przyciski katalogów (rzadko używane współcześnie).<br>
+  - menubar=no → ukrywa pasek menu (File/Edit itp.) w nowym oknie.<br>
+  - height=280 → ustawia wysokość nowego okna na 280 pikseli.<br>
+  - width=160 → ustawia szerokość nowego okna na 160 pikseli.<br>
+  - top=200 → ustawia pozycję nowego okna 200 pikseli od góry ekranu.<br>
+  - left=200 → ustawia pozycję nowego okna 200 pikseli od lewej krawędzi ekranu.<br><br>
+
+  <b>12) Opisz instrukcję window.close()</b><br>
+  `window.close()` zamyka bieżące okno/kartę przeglądarki, w którym jest wywołana. Wiele przeglądarek pozwala na zamknięcie okna tylko jeśli zostało ono otwarte przez skrypt; zamykanie "ręcznie otwartej" strony może być zablokowane.<br><br>
+
+  <b>Gdy chcesz wyświetlić instrukcję, która nie powinna się wykonywać:</b><br>
+  Pierwsza możliwość: znak `<` jako `&lsaquo;`, znak `>` jako `&rsaquo;`.<br>
+  Druga możliwość: umieszczenie tekstu w tagu `<code>...</code>` lub węwnątrz preformatowanego bloku `<pre>...</pre>` — wtedy przeglądarka pokaże kod, a nie wykona.<br><br>
+
+  <input type="button" value="Zamknij okno" onclick="okno_zamknij_siro()">
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zad 20 </title>
+</head>
+<body>
+  <h1>Trójkąt - długości boków</h1>
+  <form>
+    Punkt A: x = <input type="text" id="xa_sirocki" value="0">
+    y = <input type="text" id="ya_sirocki" value="0"><br><br>
+    Punkt B: x = <input type="text" id="xb_sirocki" value="0">
+    y = <input type="text" id="yb_sirocki" value="0"><br><br>
+    Punkt C: x = <input type="text" id="xc_sirocki" value="0">
+    y = <input type="text" id="yc_sirocki" value="0"><br><br>
+  </form>
+  <input type="button" value="Oblicz długości boków" onclick="obliczBoki()">
+  <div style="color:blue; font-size:30px;" id="wyniki"></div>
+  <script>
+    function AB_sie(xa, ya, xb, yb) {
+      return Math.sqrt(Math.pow(xb - xa, 2) + Math.pow(yb - ya, 2));
+    }
+    function BC_sie(xb, yb, xc, yc) {
+      return Math.sqrt(Math.pow(xc - xb, 2) + Math.pow(yc - yb, 2));
+    }
+    function AC_sie(xa, ya, xc, yc) {
+      return Math.sqrt(Math.pow(xc - xa, 2) + Math.pow(yc - ya, 2));
+    }
+    function obliczBoki() {
+      var xa_sirocki = parseFloat(document.getElementById('xa_sirocki').value);
+      var ya_sirocki = parseFloat(document.getElementById('ya_sirocki').value);
+      var xb_sirocki = parseFloat(document.getElementById('xb_sirocki').value);
+      var yb_sirocki = parseFloat(document.getElementById('yb_sirocki').value);
+      var xc_sirocki = parseFloat(document.getElementById('xc_sirocki').value);
+      var yc_sirocki = parseFloat(document.getElementById('yc_sirocki').value);
+
+      var ab = AB_sie(xa_sirocki, ya_sirocki, xb_sirocki, yb_sirocki);
+      var bc = BC_sie(xb_sirocki, yb_sirocki, xc_sirocki, yc_sirocki);
+      var ac = AC_sie(xa_sirocki, ya_sirocki, xc_sirocki, yc_sirocki);
+
+      document.getElementById('wyniki').innerHTML =
+        "AB = " + ab.toFixed(2) + " <br>BC = " + bc.toFixed(2) + " <br>AC = " + ac.toFixed(2);
+    }
+  </script>
+</body>
+</html>

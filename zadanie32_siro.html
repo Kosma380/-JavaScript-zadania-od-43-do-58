@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 32</title>
+
+<script type="text/javascript">
+
+
+function Komputer(marka, ram, dysk, procesor) {
+    this.marka = marka;
+    this.ram = ram;
+    this.dysk = dysk;
+    this.procesor = procesor;
+}
+
+
+Komputer.prototype.wypisz = function () {
+    alert(this.marka + " " + this.ram + " " + this.dysk + " " + this.procesor);
+};
+
+
+var komputer1 = new Komputer("Dell", "16 GB", "SSD 512 GB", "Intel i5");
+var komputer2 = new Komputer("HP", "8 GB", "SSD 256 GB", "Intel i3");
+var komputer3 = new Komputer("Lenovo", "32 GB", "SSD 1 TB", "Ryzen 7");
+
+
+function zadanie32() {
+   
+    komputer1.wypisz(); 
+    komputer2.wypisz(); 
+    komputer3.wypisz(); 
+
+  
+    document.write("<br>Dane komputerów:<br>");
+    document.write("Dell: " + komputer1.marka + " " + komputer1.ram + " " + komputer1.dysk + " " + komputer1.procesor + "<br>");
+    document.write("HP: " + komputer2.marka + " " + komputer2.ram + " " + komputer2.dysk + " " + komputer2.procesor + "<br>");
+    document.write("Lenovo: " + komputer3.marka + " " + komputer3.ram + " " + komputer3.dysk + " " + komputer3.procesor + "<br>");
+    document.write("<br>programowanie obiektowe:<br>");
+}
+
+
+window.onload = zadanie32;
+
+</script>
+</head>
+
+<body>
+
+<h3>Zadanie 32</h3>
+
+</body>
+</html>

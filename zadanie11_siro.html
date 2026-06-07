@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kosma Sirocki - Zadanie 11</title>
+<script type="text/javascript">
+    function okno_zamknij_siro() { window.close(); }
+  </script>
+<meta charset="utf-8">
+</head>
+<body>
+<h2 style="color: blue;">Kosma Sirocki 3F - Zadanie 11</h2>
+<div style="color:red; font-size:40px;">
+<script language="JavaScript">
+// Kosma Sirocki 3R
+// Zadanie 11 – liczba dni
+var D1_sir = parseFloat(prompt("D1=",""));
+var D2_sir = parseFloat(prompt("D2=",""));
+var roznica = Math.abs(D1_sir - D2_sir);
+document.write("Różnica dni = " + roznica + " dni<br>");
+</script>
+</div>
+<hr>
+<p><b>Teoria:</b><br>
+Program wczytuje dwie liczby dni i oblicza bezwzględną różnicę między nimi 
+za pomocą funkcji <code>Math.abs()</code>.
+</p>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_siro()">
+</body>
+</html>

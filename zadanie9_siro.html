@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kosma Sirocki - Zadanie 9</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+    function okno_zamknij_siro() { window.close(); }
+    
+function show_prompt() {
+    var name = prompt("Napisz imię", "Imię Nazwisko");
+    if (name != null && name != "") {
+        document.write("Witaj " + name + "! Jak się masz?");
+    }
+}
+</script>
+</head>
+<body>
+<h2 style="color: blue;">Kosma Sirocki 3F - Zadanie 9</h2>
+<input type="button" onclick="show_prompt()" value="Pokaż Prompt Box">
+<hr>
+<p><b>Teoria:</b><br>
+Prompt Box służy do pobierania danych od użytkownika. 
+Zwraca wpisany tekst, jeśli kliknięto <i>OK</i>, lub <b>null</b>, jeśli kliknięto <i>Cancel</i>.
+</p>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_siro()">
+</body>
+</html>

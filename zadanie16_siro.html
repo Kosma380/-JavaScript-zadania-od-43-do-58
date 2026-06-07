@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zadanie 16 – Kosma Sirocki</title>
+</head>
+<body>
+<div style="color:navy; font-size:28px;">
+<script language="JavaScript">
+// Kosma Sirocki 3F
+// Zadanie 16
+var a = parseFloat(prompt("Podaj pierwszą liczbę A=",""));
+var b = parseFloat(prompt("Podaj drugą liczbę B=",""));
+
+document.write("Wczytane liczby: A=" + a + " B=" + b + "<br><br>");
+
+var wynik = (a + b) ** 3;
+var cz1 = a ** 3;
+var cz2 = 3 * (a ** 2) * b;
+var cz3 = 3 * a * (b ** 2);
+var cz4 = b ** 3;
+
+document.write("(" + a + " + " + b + ")^3 = " + a + "^3 + 3*(" + a + ")^2*" + b +
+" + 3*" + a + "*(" + b + ")^2 + " + b + "^3 = " +
+cz1 + " + " + cz2 + " + " + cz3 + " + " + cz4 + " = " + wynik);
+</script>
+</div>
+<input type="button" value="Zamknij okno" onclick="window.close()">
+</body>
+</html>

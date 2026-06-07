@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 24 KOD</title>
+</head>
+<body>
+<textarea  cols="100" rows="46" disabled> 
+<!DOCTYPE html>
+ <head>
+ <title> zadanie 24 </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:blue;background-color:grey;font-size:50px;">
+ <script language="JavaScript">
+ var x1_sir=parseFloat(prompt("x1=",""));
+ var x2_sir=parseFloat(prompt("x2=",""));
+ function y1_sir(x1) {
+ return 3 * Math.pow(x1_sir, 5/7);
+}
+function x1_rad(x1) {
+var st_sir=x1_sir;
+return (st_sir * Math.PI) / 180;
+}
+function y2_sir(x1){
+var st_sir=x1_sir;
+var rad_sir=(st_sir * Math.PI) / 180;
+return 2 * Math.cos(rad_sir) + 3 * Math.sin(rad_sir);
+}
+function y3_sir(x1,x2) {
+var x1_5= Math.pow(x1_sir, 5);
+var x2_4= Math.pow(x2_sir, 4);
+var x1_x2= Math.abs(x1_sir - x2_sir);
+var pierwiastek= Math.cbrt(x1_5 + 2 * x2_4);
+return pierwiastek * x1_x2;
+}
+var y1_wyn =y1_sir(x1_sir);
+var y2_wyn =y2_sir(x1_sir);
+var y3_wyn =y3_sir(x1_sir,x2_sir);
+var x1_radi= x1_rad(x1_sir);
+document.write("x1= " +x1_sir+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"); 
+document.write("x2= " +x2_sir+"<br>");
+document.write("x1= " +x1_sir+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x1= " +x1_radi.toFixed(2)+"<br>");
+document.write("y1= " +y1_wyn.toFixed(2)+"<br>");
+document.write("y2= " +y2_wyn.toFixed(2)+"<br>");
+document.write("y3= " +y3_wyn.toFixed(2)+"<br>");
+</script>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>

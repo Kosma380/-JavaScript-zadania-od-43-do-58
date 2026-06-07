@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sirocki Z39_JS</title>
+    </head>
+<body>
+<p style="color:green;"> MENU </p>
+<p style="color:red;"> 1 - kolor czerwony </p>
+<p style="color:blue;"> 2 - kolor niebieski </p>
+</body>
+</html>
+<input type="button" name="sirocki" value="Oblicz" onclick="fun_sir()" />
+ <script>
+ function fun_sir() {
+ var x_sir = prompt("Podaj kolor", "");
+ if(x_sir == 1 || x_sir.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_sir == 2 || x_sir.toLowerCase() == "niebieski") {
+document.write('<h2 style="color:blue;"> wczytałeś kolor niebieski</h2><br />');
+}
+}
+</script>
+<!-- Sirocki Z39_JS -->
